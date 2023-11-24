@@ -67,10 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="databaselist.aspx" />
+    <Content Include="networkinglist.aspx" />
+    <Content Include="programminglist.aspx" />
     <Content Include="Web.config" />
     <Content Include="servercontrol.aspx" />
+    <Content Include="homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="databaselist.aspx.cs">
+      <DependentUpon>databaselist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="databaselist.aspx.designer.cs">
+      <DependentUpon>databaselist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="networkinglist.aspx.cs">
+      <DependentUpon>networkinglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="networkinglist.aspx.designer.cs">
+      <DependentUpon>networkinglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="programminglist.aspx.cs">
+      <DependentUpon>programminglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="programminglist.aspx.designer.cs">
+      <DependentUpon>programminglist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="servercontrol.aspx.cs">
       <DependentUpon>servercontrol.aspx</DependentUpon>
@@ -79,23 +104,31 @@
     <Compile Include="servercontrol.aspx.designer.cs">
       <DependentUpon>servercontrol.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Practical2.Master.cs">
+      <DependentUpon>Practical2.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Practical2.Master.designer.cs">
+      <DependentUpon>Practical2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="Practical2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
